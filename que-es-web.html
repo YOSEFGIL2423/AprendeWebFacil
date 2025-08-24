@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es una Página Web? - AprendeWebFacil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation (misma que index.html) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>AprendeWebFacil
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="que-es-web.html">¿Qué es una Web?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tecnologias.html">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.php">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">¿Qué es una Página Web?</h1>
+                    <p class="lead">Descubre los conceptos básicos que necesitas saber para empezar en el desarrollo web</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Definición Básica</h2>
+                            <p class="card-text">Una <strong>página web</strong> es un documento digital que se muestra en un navegador web (como Chrome, Firefox o Safari) y está conectado a internet a través de una dirección única llamada URL.</p>
+                            <p>Piensa en una página web como un documento de Word, pero con superpoderes: puede contener videos, animaciones, formularios interactivos y puede ser visto por personas en todo el mundo al mismo tiempo.</p>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">¿Cómo funciona una página web?</h2>
+                            <p>El proceso es más simple de lo que parece:</p>
+                            <ol>
+                                <li>Tú escribes una dirección web (URL) en tu navegador</li>
+                                <li>Tu navegador envía una solicitud a un servidor (una computadora especial)</li>
+                                <li>El servidor responde enviando los archivos de la página web</li>
+                                <li>Tu navegador recibe estos archivos y los muestra como una página visual</li>
+                            </ol>
+                            <div class="text-center my-4">
+                                <div class="bg-light p-4 rounded">
+                                    <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+                                    <p class="mb-0"><strong>¿Sabías qué?</strong> La primera página web fue creada en 1991 por Tim Berners-Lee y todavía puedes verla <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">aquí</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">Partes de una página web</h2>
+                            <p>Todas las páginas web tienen tres componentes principales:</p>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        <i class="fas fa-code fa-2x text-danger mb-2"></i>
+                                        <h5>Contenido (HTML)</h5>
+                                        <p>El esqueleto y la información de la página</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        <i class="fas fa-paint-brush fa-2x text-primary mb-2"></i>
+                                        <h5>Diseño (CSS)</h5>
+                                        <p>Los colores, fuentes y disposición visual</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="text-center">
+                                        <i class="fas fa-bolt fa-2x text-warning mb-2"></i>
+                                        <h5>Interactividad (JavaScript)</h5>
+                                        <p>Lo que hace que la página responda a tus acciones</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title">Tipos de páginas web</h2>
+                            <p>Existen diferentes tipos de páginas web según su función:</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <strong>Webs estáticas</strong> - Muestran información fija que no cambia frecuentemente
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Webs dinámicas</strong> - El contenido cambia según el usuario o la interacción
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Tiendas online</strong> - Permiten comprar productos directamente
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Blogs</strong> - Publican artículos y noticias regularmente
+                                </li>
+                                <li class="list-group-item">
+                                    <strong>Redes sociales</strong> - Conectan personas y permiten compartir contenido
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <a href="tecnologias.html" class="btn btn-primary btn-lg">Siguiente: Tecnologías Web <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (mismo que index.html) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>AprendeWebFacil</h5>
+                    <p>Enseñamos desarrollo web desde cero con un enfoque práctico y accesible para todos.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="que-es-web.html" class="text-white">¿Qué es una Web?</a></li>
+                        <li><a href="tecnologias.html" class="text-white">Tecnologías</a></li>
+                        <li><a href="contacto.php" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@aprendewebfacil.com</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 AprendeWebFacil. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

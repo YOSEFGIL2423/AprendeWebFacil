@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologías Web - AprendeWebFacil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .tech-card {
+            transition: transform 0.3s ease;
+        }
+        .tech-card:hover {
+            transform: translateY(-10px);
+        }
+        .nav-pills .nav-link.active {
+            background-color: var(--primary-color);
+        }
+        .code-block {
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation (misma estructura) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code me-2"></i>AprendeWebFacil
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="que-es-web.html">¿Qué es una Web?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tecnologias.html">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.php">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-4 fw-bold">Tecnologías Web Esenciales</h1>
+                    <p class="lead">Conoce las herramientas fundamentales para crear páginas web modernas</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Navigation Tabs -->
+                    <ul class="nav nav-pills mb-4 justify-content-center" id="techTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="html-tab" data-bs-toggle="pill" data-bs-target="#html" type="button" role="tab">
+                                <i class="fab fa-html5 me-2"></i>HTML
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="css-tab" data-bs-toggle="pill" data-bs-target="#css" type="button" role="tab">
+                                <i class="fab fa-css3-alt me-2"></i>CSS
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="js-tab" data-bs-toggle="pill" data-bs-target="#js" type="button" role="tab">
+                                <i class="fab fa-js-square me-2"></i>JavaScript
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="bootstrap-tab" data-bs-toggle="pill" data-bs-target="#bootstrap" type="button" role="tab">
+                                <i class="fab fa-bootstrap me-2"></i>Bootstrap
+                            </button>
+                        </li>
+                    </ul>
+
+                    <!-- Tab Content -->
+                    <div class="tab-content" id="techTabsContent">
+                        <!-- HTML Tab -->
+                        <div class="tab-pane fade show active" id="html" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">HTML - Lenguaje de Marcado</h2>
+                                    <p class="card-text">HTML (HyperText Markup Language) es el esqueleto de toda página web. Define la estructura y el contenido de tu sitio.</p>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h4>¿Para qué sirve?</h4>
+                                            <ul>
+                                                <li>Crear la estructura básica de la página</li>
+                                                <li>Definir encabezados, párrafos y listas</li>
+                                                <li>Insertar imágenes y enlaces</li>
+                                                <li>Crear formularios para ingresar datos</li>
+                                                <li>Organizar el contenido con divisiones</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>Ejemplo básico</h4>
+                                            <div class="code-block">
+                                                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Mi Página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+    &lt;p&gt;Mi primera página web&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info mt-4">
+                                        <i class="fas fa-lightbulb me-2"></i>
+                                        <strong>Tip para principiantes:</strong> HTML es como los cimientos de una casa - define dónde va cada cosa pero no cómo se ve.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CSS Tab -->
+                        <div class="tab-pane fade" id="css" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">CSS - Hojas de Estilo</h2>
+                                    <p class="card-text">CSS (Cascading Style Sheets) es lo que hace que tu página web se vea bonita. Controla los colores, fuentes, diseños y animaciones.</p>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h4>¿Para qué sirve?</h4>
+                                            <ul>
+                                                <li>Definir colores y fuentes</li>
+                                                <li>Crear diseños responsivos</li>
+                                                <li>Posicionar elementos en la página</li>
+                                                <li>Agregar animaciones y transiciones</li>
+                                                <li>Hacer que el sitio se vea bien en móviles</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>Ejemplo básico</h4>
+                                            <div class="code-block">
+                                                <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info mt-4">
+                                        <i class="fas fa-lightbulb me-2"></i>
+                                        <strong>Tip para principiantes:</strong> CSS es como la pintura y decoración de tu casa - hace que todo se vea atractivo y acogedor.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- JavaScript Tab -->
+                        <div class="tab-pane fade" id="js" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">JavaScript - Interactividad</h2>
+                                    <p class="card-text">JavaScript es el lenguaje de programación que hace que tu página web sea interactiva y responda a las acciones del usuario.</p>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h4>¿Para qué sirve?</h4>
+                                            <ul>
+                                                <li>Validar formularios antes de enviarlos</li>
+                                                <li>Crear efectos y animaciones dinámicas</li>
+                                                <li>Cargar contenido sin recargar la página</li>
+                                                <li>Responder a clicks y movimientos del mouse</li>
+                                                <li>Crear aplicaciones web complejas</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>Ejemplo básico</h4>
+                                            <div class="code-block">
+                                                <pre><code>// Cambiar texto al hacer clic
+document.getElementById('miBoton').addEventListener('click', function() {
+    document.getElementById('mensaje').textContent = '¡Hola Mundo!';
+});
+
+// Validar formulario
+function validarFormulario() {
+    let nombre = document.getElementById('nombre').value;
+    if (nombre === '') {
+        alert('Por favor ingresa tu nombre');
+        return false;
+    }
+    return true;
+}</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info mt-4">
+                                        <i class="fas fa-lightbulb me-2"></i>
+                                        <strong>Tip para principiantes:</strong> JavaScript es como la electricidad y plomería de tu casa - hace que todo funcione cuando interactúas con ello.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bootstrap Tab -->
+                        <div class="tab-pane fade" id="bootstrap" role="tabpanel">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title">Bootstrap - Framework CSS</h2>
+                                    <p class="card-text">Bootstrap es un framework que te ayuda a crear sitios web responsive rápidamente, con componentes pre-diseñados y un sistema de grid.</p>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h4>¿Para qué sirve?</h4>
+                                            <ul>
+                                                <li>Crear diseños responsive fácilmente</li>
+                                                <li>Usar componentes pre-construidos</li>
+                                                <li>Mantener consistencia visual</li>
+                                                <li>Ahorrar tiempo en el desarrollo</li>
+                                                <li>Asegurar compatibilidad entre navegadores</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h4>Ejemplo básico</h4>
+                                            <div class="code-block">
+                                                <pre><code>&lt;!-- Botón de Bootstrap --&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Botón Primario&lt;/button&gt;
+
+&lt;!-- Card de Bootstrap --&gt;
+&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Título de la card&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Texto de ejemplo para la card.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Ir a algún lugar&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="alert alert-info mt-4">
+                                        <i class="fas fa-lightbulb me-2"></i>
+                                        <strong>Tip para principiantes:</strong> Bootstrap es como un kit de muebles prefabricados - te ahorra tiempo y esfuerzo al construir tu sitio web.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <a href="contacto.php" class="btn btn-primary btn-lg">Siguiente: Contacto <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (mismo que index.html) -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>AprendeWebFacil</h5>
+                    <p>Enseñamos desarrollo web desde cero con un enfoque práctico y accesible para todos.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Inicio</a></li>
+                        <li><a href="que-es-web.html" class="text-white">¿Qué es una Web?</a></li>
+                        <li><a href="tecnologias.html" class="text-white">Tecnologías</a></li>
+                        <li><a href="contacto.php" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p><i class="fas fa-envelope me-2"></i> info@aprendewebfacil.com</p>
+                    <div class="d-flex">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 AprendeWebFacil. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
